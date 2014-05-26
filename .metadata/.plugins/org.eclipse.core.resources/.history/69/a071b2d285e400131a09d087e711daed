@@ -76,68 +76,40 @@ public class UC extends JFrame {
 
 		JButton btnCancelar = new JButton("Cancelar");
 		GroupLayout gl_panel = new GroupLayout(panel);
-		gl_panel.setHorizontalGroup(gl_panel
-				.createParallelGroup(Alignment.LEADING)
-				.addGroup(
-						gl_panel.createSequentialGroup()
-								.addContainerGap()
-								.addGroup(
-										gl_panel.createParallelGroup(
-												Alignment.LEADING)
-												.addComponent(
-														tree,
-														GroupLayout.PREFERRED_SIZE,
-														GroupLayout.DEFAULT_SIZE,
-														GroupLayout.PREFERRED_SIZE)
-												.addGroup(
-														gl_panel.createSequentialGroup()
-																.addComponent(
-																		btnOk)
-																.addPreferredGap(
-																		ComponentPlacement.RELATED)
-																.addComponent(
-																		btnCancelar))
-												.addGroup(
-														gl_panel.createSequentialGroup()
-																.addComponent(
-																		lblNome)
-																.addPreferredGap(
-																		ComponentPlacement.RELATED)
-																.addComponent(
-																		textField,
-																		GroupLayout.DEFAULT_SIZE,
-																		97,
-																		Short.MAX_VALUE))
-												.addComponent(lblEditar))
-								.addContainerGap()));
-		gl_panel.setVerticalGroup(gl_panel
-				.createParallelGroup(Alignment.TRAILING)
-				.addGroup(
-						gl_panel.createSequentialGroup()
-								.addContainerGap()
-								.addComponent(tree, GroupLayout.PREFERRED_SIZE,
-										GroupLayout.DEFAULT_SIZE,
-										GroupLayout.PREFERRED_SIZE)
-								.addPreferredGap(ComponentPlacement.RELATED,
-										549, Short.MAX_VALUE)
-								.addComponent(lblEditar)
-								.addPreferredGap(ComponentPlacement.RELATED)
-								.addGroup(
-										gl_panel.createParallelGroup(
-												Alignment.BASELINE)
-												.addComponent(lblNome)
-												.addComponent(
-														textField,
-														GroupLayout.PREFERRED_SIZE,
-														GroupLayout.DEFAULT_SIZE,
-														GroupLayout.PREFERRED_SIZE))
-								.addPreferredGap(ComponentPlacement.UNRELATED)
-								.addGroup(
-										gl_panel.createParallelGroup(
-												Alignment.BASELINE)
-												.addComponent(btnOk)
-												.addComponent(btnCancelar))
-								.addGap(52)));
+		gl_panel.setHorizontalGroup(
+			gl_panel.createParallelGroup(Alignment.LEADING)
+				.addGroup(gl_panel.createSequentialGroup()
+					.addContainerGap()
+					.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
+						.addComponent(tree, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addGroup(gl_panel.createSequentialGroup()
+							.addComponent(btnOk)
+							.addPreferredGap(ComponentPlacement.RELATED)
+							.addComponent(btnCancelar))
+						.addGroup(gl_panel.createSequentialGroup()
+							.addComponent(lblNome)
+							.addPreferredGap(ComponentPlacement.RELATED)
+							.addComponent(textField, GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE))
+						.addComponent(lblEditar))
+					.addContainerGap())
+		);
+		gl_panel.setVerticalGroup(
+			gl_panel.createParallelGroup(Alignment.TRAILING)
+				.addGroup(gl_panel.createSequentialGroup()
+					.addContainerGap()
+					.addComponent(tree, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(ComponentPlacement.RELATED, 549, Short.MAX_VALUE)
+					.addComponent(lblEditar)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addGroup(gl_panel.createParallelGroup(Alignment.BASELINE)
+						.addComponent(lblNome)
+						.addComponent(textField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+					.addPreferredGap(ComponentPlacement.UNRELATED)
+					.addGroup(gl_panel.createParallelGroup(Alignment.BASELINE)
+						.addComponent(btnOk)
+						.addComponent(btnCancelar))
+					.addGap(52))
+		);
 		panel.setLayout(gl_panel);
 
 	}
@@ -169,8 +141,7 @@ public class UC extends JFrame {
 		JToggleButton tgButtonElipse = new JToggleButton("");
 		tgButtonElipse.setToolTipText("Use Case");
 		tgButtonElipse
-				.setIcon(new ImageIcon(
-						"C:\\Users\\Leon Dias\\Documents\\GitHub\\UCDiagram\\Diagrama de Caso de Uso\\src\\Images\\elipse.png"));
+				.setIcon(new ImageIcon("C:\\Users\\Leon Dias\\Documents\\GitHub\\UCDiagram\\Diagrama de Caso de Uso\\src\\Images\\elipse.png"));
 		toolBar.add(tgButtonElipse);
 
 		JToggleButton tgButtonArrow = new JToggleButton("");
@@ -247,4 +218,7 @@ public class UC extends JFrame {
 
 	}
 
+	public static void main(String[] args) {
+		new UC();
+	}
 }
