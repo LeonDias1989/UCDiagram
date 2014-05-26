@@ -1,0 +1,84 @@
+package Teste;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.GroupLayout;
+import javax.swing.GroupLayout.Alignment;
+import javax.swing.JInternalFrame;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import java.awt.Color;
+
+public class JanelaTest extends JFrame {
+
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		new JanelaTest();
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public JanelaTest() {
+
+		internalFrame();
+
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 596, 481);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(new BorderLayout(0, 0));
+
+	}
+
+	private void internalFrame() {
+
+		JInternalFrame internalFrame = new JInternalFrame("New JInternalFrame");
+		internalFrame.getContentPane().setBackground(Color.WHITE);
+
+		JLabel lblNewLabel = new JLabel("Actor 0");
+		lblNewLabel
+				.setIcon(new ImageIcon(
+						"C:\\Users\\Leon Dias\\Documents\\GitHub\\UCDiagram\\Diagrama de Caso de Uso\\src\\Images\\ActorTela.png"));
+
+		JLabel lblNewLabel_1 = new JLabel("New label");
+		lblNewLabel_1
+				.setIcon(new ImageIcon(
+						"C:\\Users\\Leon Dias\\Documents\\GitHub\\UCDiagram\\Diagrama de Caso de Uso\\src\\Images\\elipseTela.png"));
+		GroupLayout groupLayout = new GroupLayout(
+				internalFrame.getContentPane());
+		groupLayout.setHorizontalGroup(groupLayout.createParallelGroup(
+				Alignment.LEADING).addGroup(
+				groupLayout.createSequentialGroup().addGap(45)
+						.addComponent(lblNewLabel).addGap(122)
+						.addComponent(lblNewLabel_1)
+						.addContainerGap(146, Short.MAX_VALUE)));
+		groupLayout.setVerticalGroup(groupLayout.createParallelGroup(
+				Alignment.LEADING)
+				.addGroup(
+						groupLayout
+								.createSequentialGroup()
+								.addGap(79)
+								.addGroup(
+										groupLayout
+												.createParallelGroup(
+														Alignment.BASELINE)
+												.addComponent(lblNewLabel_1)
+												.addComponent(lblNewLabel))
+								.addContainerGap(214, Short.MAX_VALUE)));
+		internalFrame.getContentPane().setLayout(groupLayout);
+		internalFrame.setVisible(true);
+		
+		contentPane.add(internalFrame, BorderLayout.CENTER);
+
+	}
+}

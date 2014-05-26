@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="Teste.JanelaTest"/>
+<fullyQualifiedTypeName name="Controller.SairController"/>
+<fullyQualifiedTypeName name="Controller.NovoController"/>
+<fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="Controller.HelpController"/>
+</qualifiedTypeNameHistroy>

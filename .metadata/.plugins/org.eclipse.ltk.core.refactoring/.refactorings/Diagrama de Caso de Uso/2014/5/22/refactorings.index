@@ -1,0 +1,18 @@
+1401103530313	Rename package 'Tests'
+1401105410400	Rename field 'toolBar'
+1401105491777	Rename method 'internalFrame'
+1401105503606	Rename field 'internalFrame'
+1401105517707	Rename field 'contentPane'
+1401105552294	Rename local variable 'tglbtnActor'
+1401105560374	Rename local variable 'tglbtnCase'
+1401105583959	Rename local variable 'tglbtnExtends'
+1401105604767	Delete element
+1401106153954	Delete element
+1401106566997	Rename local variable 'gl_panel'
+1401110120637	Rename type 'UC'
+1401110222371	Rename local variable 'arg0'
+1401110337453	Rename local variable 'mntmSair'
+1401110345011	Rename local variable 'mntmNovo'
+1401111685115	Rename local variable 'arg0'
+1401111902951	Rename local variable 'mnHelp'
+1401144452948	Rename local variable 'menuItemSobre'
